@@ -1,7 +1,11 @@
-const exec = require("shell-exec");
+const { exec } = require('child_process');
 
 exec(
-  "git for-each-ref --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always|column -ts'|'})"
+  "git for-each-ref --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always|column -ts'|'}",
+  (err, stdout, stderr) => {
+    console.log(stdout);
+    console.log(stderr);
+  }
 );
 
 // Alternative configuration
