@@ -7,6 +7,14 @@
     "test": "prettier --check \"**/*\"",
     "start": "node index.js"
   },
+  "bugs": {
+    "url": "https://github.com/BearAlliance/sort-branch/issues"
+  },
+  "homepage": "https://github.com/BearAlliance/sort-branch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BearAlliance/sort-branch.git"
+  },
   "keywords": [
     "git",
     "branch",
@@ -14,7 +22,7 @@
     "last",
     "modified"
   ],
-  "author": "Nick Cacace",
+  "author": "Nick Cacace <nickcacace@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "shell-exec": "^1.0.2"
