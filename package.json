@@ -24,9 +24,7 @@
   ],
   "author": "Nick Cacace <nickcacace@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "shell-exec": "^1.0.2"
-  },
+  "dependencies": {},
   "files": [
     "index.js"
   ],
